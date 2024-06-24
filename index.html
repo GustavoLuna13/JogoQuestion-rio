@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo questionário</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="main.js"></script>
+<script src="verified.js"></script>
+</head>
+<body>
+	<center>
+
+		<br>
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+		<h3> Bem-vindo ao jogo do questionário</h3>
+		<label> Acerte todas as perguntas e chegue até o final do jogo. Fique atento nas suas respostas caso haja algum espaço depois da palavra ou algum acento esquecido na palavra</label>
+		<br>
+	</div>
+
+	<br>
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "divDificuldade">
+		<h3> Escolha o nível de dificuldade: </h3>
+		<button style="width:30%" class="btn btn primary" onclick= "modofacil()" id = "botaoFacil">Fácil</button>
+		<img src = "verified.png" style = "display:none" height = "50" id = "verifiedfacil">
+		<br>
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "modomedio()" id = "botaoMedio">Médio</button>
+		<br>
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "modohardcore()" id = "botaoHardcore">Hardcore</button>
+		<br>
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "modoultrahard()" id = "botaoUltraHard">Ultra hardcore</button>
+	</div>
+
+	</center>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo questionário</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="modohardcore.css">
+
+<script src="modohardcore.js"></script>
+<script src="verified.js"></script>
+</head>
+<body>
+	<center>
+
+		<br>
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+		<h3> MODO HARDCORE</h3>
+		<label>Acerte as peguntas e chegue até o final</label>
+		<br>
+	</div>
+
+	<br>
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "divFinal" style="display:none">
+		<h3> Parabéns! </h3>
+		<label> Você respondeu todas as perguntas</label>
+		<br>
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "voltarhardcore ()" id = "botaoVoltar">Voltar ao menu principal</button>
+		<br>
+	</div>
+
+	<br id = "brFinal" style="display:none">
+
+    <div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div12" style="display:none">
+		<h3> Pergunta 12 </h3>
+		<label> (-10) • (-10)  </label>
+		<input type = "text" id = "input12" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta12()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br12" style="display:none">
+    
+    <div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div11" style="display:none">
+
+		<h3> Pergunta 11 </h3>
+		<label> Eu sou uma peça de xadrez, e eu posso me mover apenas verticalmente e horizontalmente. Quem sou eu? </label>
+		<input type = "text" id = "input11" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta11()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br11" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div10" style="display:none">
+		<h3> Pergunta 10 </h3>
+		<label> Que time é esse?? </label>
+		<br>
+		<img src = "time.png" height = "200">
+		<br>
+		<br>
+		<input type = "text" id = "input10" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta10()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br10" style="display:none">
+
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div9" style="display:none">
+		<h3> Pergunta 9 </h3>
+		<label> Escreva abaixo a resposta da questão 9 do modo médio: </label>
+		<input type = "text" id = "input9" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta9()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br9" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div8" style="display:none">
+		<h3> Pergunta 8 </h3>
+		<label> 100 + 100 - 100 + 100 + 100 - 100 + 100? </label>
+		<input type = "text" id = "input8" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta8()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br8" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div7" style="display:none">
+		<h3> Pergunta 7 </h3>
+		<label> Qual é o número escondido? </label>
+		<br>
+		<img src = "numero.png" height = "200">
+		<br>
+		<br>
+		<input type = "text" id = "input7" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta7()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br7" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div6" style="display:none">
+		<h3> Pergunta 6 </h3>
+		<label> Qual o nome da forma geométrica de 5 lados? </label>
+		<input type = "text" id = "input6" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta6()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br6" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div5" style="display:none">
+		<h3> Pergunta 5 </h3>
+		<label> Que bandeira é essa? </label>
+		<br>
+		<img src = "bandeira3.png">
+		<br>
+		<br>
+		<input type = "text" id = "input5" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta5()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br5" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div4" style="display:none">
+		<h3> Pergunta 4 </h3>
+		<label> Complete: "Plutão é um planeta ___" </label>
+		<input type = "text" id = "input4" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta4()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br4" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div3" style="display:none">
+		<h3> Pergunta 3 </h3>
+		<label> Qual o nome deste mob? </label>
+		<br>
+		<img src = "mob1.jpeg" height="200">
+		<br>
+		<br>
+		<input type = "text" id = "input3" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta3()">Confirmar</button>
+		<br>
+	</div>
+
+	<br id = "br3" style="display:none">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2" id = "div2" style="display:none">
+		<h3> Pergunta 2 </h3>
+		<label> Qual o nome deste símbolo? </label>
+		<br>
+		<img src = "simbolo1.png" height="200">
+		<br>
+		<br>
+		<input type = "text" id = "input2" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta2()">Confirmar</button>
+		<br>
+	</div>
+
+	<br style="display:none" id = "br2">
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+		<h3> Pergunta 1 </h3>
+		<label> Quanto é (-2) • (+12)? </label>
+		<input type = "text" id="input1" class="form-control">
+		<br>
+		<button style="width:30%" class="btn btn primary" onclick= "pergunta1 ()">Confirmar</button>
+		<br>
+	</div>
+
+	<br>
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+		<button style="width:30%" class="btn btn primary" onclick= "voltar ()" id = "botaoVoltar">Voltar ao menu principal</button>
+		<br>
+	</div>
+
+	</center>
+</body>
+</html>
