@@ -1,0 +1,65 @@
+body
+{
+	background: rgb(159, 165, 241);
+}
+
+#botaoFacil {
+
+	background-color: rgb(124, 122, 255);
+	color: white;
+
+}
+
+#botaoMedio {
+
+	background-color: rgb(255, 187, 0);
+	color: white;
+
+}
+
+#botaoHardcore {
+
+	background-color: rgb(255, 84, 84);
+	color: white;
+
+}
+
+#botaoUltraHard {
+
+	background-color: rgb(187, 37, 37);
+	color: white;
+
+}
+
+	.login_div1 , .login_div2
+	{
+		background: white;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+		text-align: center;
+	}
+
+
+#player1_name , #player2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
